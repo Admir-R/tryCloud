@@ -23,8 +23,10 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    Actions actions = new Actions(Driver.getDriver());
     public void clickMenuByText(String text){
         String locator = "(//a[contains(.,'"+text+"')])[1]";
         WebElement element = Driver.getDriver().findElement(By.xpath(locator));
+        actions.moveToElement(element).click().perform();
     }
 }
