@@ -19,15 +19,9 @@ public class DailyCalendar_StepDef extends BasePage {
     public void clickMenuByText(String text) {
         super.clickMenuByText(text);
     }
-    LoginPage loginPage = new LoginPage();
 
     CalendarPage dailyCalendarPage = new CalendarPage();
 
-    @Given("User is on the dashboard page")
-    public void user_is_on_the_dashboard_page() {
-
-        loginPage.login(ConfigurationReader.getProperty("user_username"), ConfigurationReader.getProperty("user_password"));
-    }
 
     @When("user clicks on the calendar icon on the dashboard")
     public void user_clicks_on_the_calendar_icon_on_the_dashboard() {
