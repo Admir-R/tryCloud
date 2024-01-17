@@ -30,14 +30,14 @@ public class NewEvent_StepDefs extends BasePage {
         newEvent.allDayCheckbox.click();
         BrowserUtils.sleep(4);
         newEvent.startingDateBox.click();
-        CalendarPage.clickStartingDate("5");
+        CalendarPage.clickStartingDate("24");
 
     }
     @When("user selects the ending date")
     public void user_selects_the_ending_date() {
         newEvent.endingDateBox.click();
         BrowserUtils.sleep(4);
-        CalendarPage.clickEndingDate("1");
+        CalendarPage.clickEndingDate("26");
 
     }
     @When("user clicks Save")
