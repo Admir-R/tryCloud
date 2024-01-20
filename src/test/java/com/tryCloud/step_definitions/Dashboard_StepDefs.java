@@ -26,7 +26,7 @@ public class Dashboard_StepDefs extends BasePage {
     @When("user can see the dashboard modules")
     public void user_can_see_the_dashboard_modules() {
 
-        dashboardPage.dashboardModules();
+        Dashboard_Page.dashboardModules();
     }
     @When("user clicks on the profile icon")
     public void user_clicks_on_the_profile_icon() {
